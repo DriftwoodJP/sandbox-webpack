@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack -p",
+    "start": "webpack -d -w"
   },
   "devDependencies": {
     "webpack": "^2.6.1"
