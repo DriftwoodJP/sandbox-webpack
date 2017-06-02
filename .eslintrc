@@ -1,0 +1,16 @@
+{
+  "extends": "google",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": 0,
+    "require-jsdoc": 0
+  }
+}
