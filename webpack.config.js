@@ -1,4 +1,5 @@
 var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -26,5 +27,6 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [new HtmlWebpackPlugin()]
 };
