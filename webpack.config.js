@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: ['./app/index.js', './app/console.js'],
+    app: ['./app/index.js'],
     vendors: './app/vendors.js',
   },
   output: {
@@ -46,11 +46,7 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      _: 'lodash',
     }),
-    new HtmlWebpackPlugin({
-      title: 'Webpack App',
-      template: 'app/index.html',
-    }),
+    new HtmlWebpackPlugin(),
   ],
 };
