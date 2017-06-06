@@ -1,14 +1,14 @@
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
     app: ['./app/index.js', './app/console.js'],
-    vendors: './app/vendors.js'
+    vendors: './app/vendors.js',
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
@@ -16,35 +16,35 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: [
-          { loader: 'babel-loader' },
+          {loader: 'babel-loader'},
           {
             loader: 'eslint-loader',
             options: {
               fix: true,
-              failOnError: true
-            }
-          }
-        ]
+              failOnError: true,
+            },
+          },
+        ],
       },
       {
         test: /\.css$/,
         use: [
-          { loader: "style-loader" },
-          { loader: "css-loader" }
-        ]
+          {loader: 'style-loader'},
+          {loader: 'css-loader'},
+        ],
       },
       {
         test: /\.(gif|png|jpg|eot|wof|woff|ttf|svg)$/,
         use: [
-          { loader: 'url-loader' },
-        ]
-      }
-    ]
+          {loader: 'url-loader'},
+        ],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack App',
-      template: 'app/index.html'
-    })
-  ]
+      template: 'app/index.html',
+    }),
+  ],
 };
