@@ -25,8 +25,26 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" }
+        ]
+      },
+      {
+        test: /\.(gif|png|jpg|eot|wof|woff|ttf|svg)$/,
+        use: [
+          { loader: 'url-loader' },
+        ]
       }
     ]
   },
-  plugins: [new HtmlWebpackPlugin()]
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Webpack App',
+      template: 'app/index.html'
+    })
+  ]
 };

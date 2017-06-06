@@ -24,3 +24,13 @@ class Friend extends Person {
 let friend = new Friend('Foo');
 
 friend.callName();
+
+
+import $ from 'jquery';
+import 'slick-carousel';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+$('.your-class').slick();
+
+import styles from './stylesheets/style.css';
