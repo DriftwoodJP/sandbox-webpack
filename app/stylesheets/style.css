@@ -1,3 +1,29 @@
-.your-class {
-  background: skyblue;
+.slick-prev:before,
+.slick-next:before {
+  color: #fff;
+  font-size: 40px;
+}
+
+.slick-next {
+  right: 40px;
+  z-index: 99;
+}
+.slick-prev {
+  left: 20px;
+  z-index: 100;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding: 0;
 }
