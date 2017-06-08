@@ -1,0 +1,45 @@
+/*
+ * Slick Custom Settings
+ */
+
+$light-color: #fff;
+$dark-color: #000;
+
+%slick-arrow {
+  transition-duration: 1s;
+
+  &:hover {
+    transform: rotateX(180deg);
+  }
+
+  &:before {
+    color: $light-color;
+    font-size: 40px;
+  }
+}
+
+.slick-next {
+  @extend %slick-arrow;
+  right: 40px;
+  z-index: 99;
+}
+.slick-prev {
+  @extend %slick-arrow;
+  left: 20px;
+  z-index: 100;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: $dark-color;
+}
+
+.slide {
+  padding: 0;
+
+  li img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
