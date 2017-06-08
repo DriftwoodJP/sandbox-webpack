@@ -20,5 +20,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import styles from './stylesheets/style.css';
 
 $(function() {
-  $('.slide').slick();
+  $('.slide').slick({
+    infinite: true,
+    dots: true,
+  });
 });

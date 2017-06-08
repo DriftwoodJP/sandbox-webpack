@@ -1,3 +1,17 @@
+/*
+ * Slick Custom Settings
+ */
+
+.slick-next,
+.slick-prev {
+  transition-duration: 1s;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  transform: rotateX(180deg);
+}
+
 .slick-prev:before,
 .slick-next:before {
   color: #fff;
@@ -15,15 +29,15 @@
 
 .slick-dots li.slick-active button:before,
 .slick-dots li button:before {
-  color: #fff;
+  color: #000;
 }
 
-img {
+.slide li img {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-ul {
+.slide {
   padding: 0;
 }
