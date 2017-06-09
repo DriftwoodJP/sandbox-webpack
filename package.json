@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack -p",
-    "start": "webpack -d -w --devtool source-map",
+    "start": "webpack-dev-server -d --devtool source-map",
     "clean": "rm -rf ./dist"
   },
   "browserslist": [
@@ -31,7 +31,8 @@
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.8",
-    "webpack": "^2.6.1"
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
