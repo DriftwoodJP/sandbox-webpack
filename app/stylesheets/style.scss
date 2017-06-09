@@ -12,7 +12,7 @@ $dark-color: #000;
     transform: rotateX(180deg);
   }
 
-  &:before {
+  &::before {
     color: $light-color;
     font-size: 40px;
   }
@@ -20,17 +20,20 @@ $dark-color: #000;
 
 .slick-next {
   @extend %slick-arrow;
+
   right: 40px;
   z-index: 99;
 }
+
 .slick-prev {
   @extend %slick-arrow;
+
   left: 20px;
   z-index: 100;
 }
 
-.slick-dots li.slick-active button:before,
-.slick-dots li button:before {
+.slick-dots li.slick-active button::before,
+.slick-dots li button::before {
   color: $dark-color;
 }
 
