@@ -6,4 +6,4 @@
 Version: webpack 2.6.1
 ```
 
-See "[webpack 2 | deadwood](https://www.d-wood.com/blog/category/webpack-2)".
+See "[Webpack 2 Getting Started: Summary and Table of Contents](https://www.d-wood.com/blog/2017/06/11_9041.html)".
